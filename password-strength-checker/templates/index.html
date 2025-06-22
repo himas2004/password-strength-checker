@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Strength Checker</title>
+</head>
+<body>
+    <h1>Check Your Password</h1>
+    <form method="POST">
+        <input type="text" name="password" required>
+        <input type="submit" value="Check">
+    </form>
+
+    {% if result %}
+        <h3>Strength: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
